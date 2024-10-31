@@ -4,12 +4,19 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-}
+} 
 
+.container {
+    background-color: rgb(138, 115, 160);
+    height: auto;
+    width: auto;
+    margin-top: 10px; 
+    border: 2px solid black;
+}
 .ToDo-List {
     width: 100%;
     max-width: 540px;
-    /* background: #fff; */
+    background: red; 
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -66,7 +73,6 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    /* background-image: url(); */
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -78,5 +84,22 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    /* background-color: red; */
+    background-color: orange;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
 }
